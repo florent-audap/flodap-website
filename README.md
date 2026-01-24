@@ -1,21 +1,76 @@
-# React + TypeScript + Vite
+# 🚀 Nom du projet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Petit projet web construit avec **React**, **Vite** et **TypeScript**, déployé sur **Vercel**.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## 🧱 Stack technique
 
-## Deploy Your Own
+- React
+- Vite
+- TypeScript
+- Vercel (Hosting & Preview deployments)
+- Cloudflare (DNS, sécurité, emails)
+- Vercel Analytics
 
-Deploy your own Vite project with Vercel.
+## 📦 Prérequis
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+- Node.js >= 18
+- npm (ou yarn / pnpm)
 
-_Live Example: https://vite-react-example.vercel.app_
+## ⚙️ Installation
 
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
+```bash
+npm install
 ```
+
+▶️ Lancer le projet en local
+
+```bash
+npm run dev
+```
+
+Le site sera accessible sur :
+
+http://www.florentaudap.com
+
+🏗️ Build production
+
+```bash
+npm run build
+npm run preview
+```
+
+🌱 Environnements
+
+Environnement Usage
+Local Développement
+Preview Tests sur branche develop
+Production Branche main
+
+Les variables d’environnement sont gérées via :
+
+- `.env.local` (local)
+- Vercel → Project Settings → Environment Variables
+
+⚠️ Les fichiers .env ne sont jamais commit.
+
+🌿 Git workflow
+
+main → production
+
+develop → preview
+
+feature/\* → nouvelles fonctionnalités
+
+Les merges vers main se font via Pull Request.
+
+📊 Analytics
+
+Les analytics sont gérés via Vercel Analytics :
+
+- trafic
+- pages vues
+- performances
+
+📄 Licence
+
+Projet personnel – usage libre.

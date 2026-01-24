@@ -1,0 +1,21 @@
+# Dépendances
+node_modules
+
+# Build
+dist
+build
+coverage
+
+# Fichiers générés
+*.min.js
+*.min.css
+*.map
+
+# Lock files (optionnel)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Configs générées
+.vite
+.cache
