@@ -29,7 +29,7 @@ export default function Navbar() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-            <li>
+            {/* <li>
               <a>Parent</a>
               <ul className="p-2">
                 <li>
@@ -39,14 +39,14 @@ export default function Navbar() {
                   <Link to="/sub2">Submenu 2</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link to="/about">About Me</Link>
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">
-          FA's website
+        <Link to="/" className="btn btn-ghost text-l">
+          Florent Audap | Personal Website
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -54,7 +54,7 @@ export default function Navbar() {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
+          {/* <li>
             <details>
               <summary>Parent</summary>
               <ul className="p-2 bg-base-100 w-40 z-1">
@@ -66,7 +66,7 @@ export default function Navbar() {
                 </li>
               </ul>
             </details>
-          </li>
+          </li> */}
           <li>
             <Link to="/about">About Me</Link>
           </li>
