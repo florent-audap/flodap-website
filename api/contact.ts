@@ -1,7 +1,7 @@
-import { sendContactEmail } from "../src/lib/mailer.ts";
-import { validateContact } from "../src/utils/contactFormValidation.ts";
+import { sendContactEmail } from "../src/lib/mailer.js";
+import { validateContact } from "../src/utils/contactFormValidation.js";
 import type { IncomingMessage, ServerResponse } from "http";
-import type { ContactFormPayload as ContactFormData} from "../src/types/contact.ts";
+import type { ContactFormPayload as ContactFormData} from "../src/types/contact.js";
 
 // ✅ Helper pour lire le body JSON côté Node runtime
 export function getRequestData<T>(req: IncomingMessage): Promise<T> {

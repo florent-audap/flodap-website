@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { ContactFormPayload } from "../types/contact";
+import { ContactFormPayload } from "../types/contact.js";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
