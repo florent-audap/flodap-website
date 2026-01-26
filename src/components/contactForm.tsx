@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { useContactForm } from "../hooks/useContactForm";
 
+function isPaul(email: string){
+  if (email.includes("paul.guimbert")){
+    window.alert("Bonjour Paul, peux-tu quitter mon super site web please !");
+  }
+}
+
 export function ContactForm() {
   const { submit, loading, success, error } = useContactForm();
   const [form, setForm] = useState({
@@ -21,6 +27,7 @@ export function ContactForm() {
       onSubmit={e => {
         e.preventDefault();
         submit(form);
+        isPaul(form.email);
       }}
       className="space-y-4 p-10 flex flex-col items-center"
     >
