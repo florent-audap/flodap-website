@@ -64,7 +64,7 @@ export function ContactForm() {
         onChange={e => setForm({ ...form, company: e.target.value })}
       />
 
-      <button className="btn btn-primary" disabled={loading}>
+      <button className="btn btn-primary bg-emerald-900" disabled={loading}>
         {loading ? "Sending..." : "Send Message"}
       </button>
 
