@@ -1,4 +1,4 @@
-import { ContactFormPayload } from "../types/contact";
+import { ContactFormPayload } from "../types/contact.js";
 
 export function validateContact(data: ContactFormPayload) {
   if (data.company) return false; //it is for the bot trap : the "honeypot"

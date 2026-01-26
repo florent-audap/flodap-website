@@ -1,13 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    ecmaFeatures: { jsx: true }
+    ecmaFeatures: { jsx: true },
   },
   plugins: ["@typescript-eslint", "react", "react-hooks"],
   extends: [
@@ -15,7 +15,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "prettier"
+    "prettier",
   ],
   rules: {
     // Bruit réduit
@@ -23,9 +23,9 @@ module.exports = {
 
     // Vraiment utiles
     "@typescript-eslint/no-unused-vars": ["warn"],
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
   },
   settings: {
-    react: { version: "detect" }
-  }
+    react: { version: "detect" },
+  },
 };

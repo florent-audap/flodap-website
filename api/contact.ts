@@ -1,7 +1,7 @@
-import { sendContactEmail } from "../src/lib/mailer.ts";
-import { validateContact } from "../src/utils/contactFormValidation.ts";
+import { sendContactEmail } from "../src/lib/mailer.js";
+import { validateContact } from "../src/utils/contactFormValidation.js";
 import type { IncomingMessage, ServerResponse } from "http";
-import type { ContactFormPayload as ContactFormData} from "../src/types/contact.ts";
+import type { ContactFormPayload as ContactFormData } from "../src/types/contact.js";
 
 // ✅ Helper pour lire le body JSON côté Node runtime
 export function getRequestData<T>(req: IncomingMessage): Promise<T> {
@@ -22,7 +22,10 @@ export function getRequestData<T>(req: IncomingMessage): Promise<T> {
 }
 
 // ✅ Handler typé
-export default async function handler(req: IncomingMessage, res: ServerResponse) {
+export default async function handler(
+  req: IncomingMessage,
+  res: ServerResponse
+) {
   if (req.method !== "POST") {
     res.writeHead(405, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ error: "Method Not Allowed" }));
