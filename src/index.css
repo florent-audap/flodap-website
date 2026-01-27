@@ -1,5 +1,19 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes:
+    light --default,
+    forest --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: oklch(37% 0.12 167);
+  --color-secondary: teal;
+}
+
+
 
 @layer base {
   h1 {

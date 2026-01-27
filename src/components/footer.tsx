@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="footer footer-horizontal footer-center text-white bg-emerald-900 rounded gap-8 p-5">
+    <footer className="footer footer-horizontal footer-center text-white bg-primary rounded gap-8 p-5">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
@@ -52,7 +52,8 @@ export function Footer() {
       </nav>
       <aside>
         <p className="-mt-4 -mb-2">
-          Copyright © {new Date().getFullYear()} - Florent Audap. All rights reserved.
+          Copyright © {new Date().getFullYear()} - Florent Audap. All rights
+          reserved.
         </p>
       </aside>
     </footer>

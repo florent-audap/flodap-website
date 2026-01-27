@@ -64,11 +64,11 @@ export function ContactForm() {
         onChange={(e) => setForm({ ...form, company: e.target.value })}
       />
 
-      <button className="btn btn-primary bg-emerald-900" disabled={loading}>
+      <button className="btn btn-primary" disabled={loading}>
         {loading ? "Sending..." : "Send Message"}
       </button>
 
-      {success && <p className="text-success">Message succesfully sent ✅</p>}
+      {success && <p className="text-success">Message successfully sent ✅</p>}
       {error && <p className="text-error">{error}</p>}
     </form>
   );
