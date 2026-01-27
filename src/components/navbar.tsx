@@ -44,7 +44,7 @@ export default function Navbar() {
     }
   };
   return (
-    <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+    <div className="navbar bg-base-200 shadow-sm dark:shadow-amber-50 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,17 +74,9 @@ export default function Navbar() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-            {/* <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <Link to="/sub1">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link to="/sub2">Submenu 2</Link>
-                </li>
-              </ul>
-            </li> */}
+            <li>
+              <Link to="/projects">My Projects</Link>
+            </li>
             <li>
               <Link to="/about">About Me</Link>
             </li>
@@ -99,19 +91,9 @@ export default function Navbar() {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          {/* <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <Link to="/sub1">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link to="/sub2">Submenu 2</Link>
-                </li>
-              </ul>
-            </details>
-          </li> */}
+          <li>
+            <Link to="/projects">My Projects</Link>
+          </li>
           <li>
             <Link to="/about">About Me</Link>
           </li>
@@ -120,11 +102,7 @@ export default function Navbar() {
       <div className="navbar-end">
         {/* Thème controller */}
         <label className="toggle text-base-content-200 mr-3">
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={handleToggle}
-          />
+          <input type="checkbox" checked={checked} onChange={handleToggle} />
 
           <svg
             aria-label="sun"

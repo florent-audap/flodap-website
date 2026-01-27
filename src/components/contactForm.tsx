@@ -68,7 +68,7 @@ export function ContactForm() {
         {loading ? "Sending..." : "Send Message"}
       </button>
 
-      {success && <p className="text-success">Message succesfully sent ✅</p>}
+      {success && <p className="text-success">Message successfully sent ✅</p>}
       {error && <p className="text-error">{error}</p>}
     </form>
   );
