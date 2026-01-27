@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useContactForm } from "../hooks/useContactForm";
 
 function isPaul(email: string) {
-  if (email.includes("paul.guimbert")) {
+  if (email.includes("guimbert")) {
     window.alert("Bonjour Paul, peux-tu quitter mon super site web please !");
   }
 }
@@ -32,7 +32,7 @@ export function ContactForm() {
       className="space-y-4 p-10 flex flex-col items-center"
     >
       <input
-        className="input input-bordered"
+        className="input input-bordered w-1/2"
         placeholder="Name"
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -41,7 +41,7 @@ export function ContactForm() {
       <input
         required
         type="email"
-        className="input input-bordered"
+        className="input input-bordered w-1/2"
         placeholder="Email"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -49,7 +49,7 @@ export function ContactForm() {
 
       <textarea
         required
-        className="textarea textarea-bordered"
+        className="textarea textarea-bordered w-1/2"
         placeholder="Message"
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
