@@ -25,7 +25,7 @@ npm install
 ▶️ Lancer le projet en local
 
 ```bash
-npm run dev
+vercel dev --local-config vercel.dev.json
 ```
 
 Le site sera accessible sur :
@@ -65,11 +65,7 @@ Les merges vers main se font via Pull Request.
 
 📊 Analytics
 
-Les analytics sont gérés via Vercel Analytics :
-
-- trafic
-- pages vues
-- performances
+Pas d'analytics pour le moment
 
 📄 Licence
 
