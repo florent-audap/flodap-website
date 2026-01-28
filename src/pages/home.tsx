@@ -34,7 +34,7 @@ export default function HomePage() {
       <h2 className="text-center my-15 text-primary">
         What can you find in this website ?
       </h2>
-      <div className="flex space-x-10 justify-center mb-10">
+      <div className="flex flex-wrap justify-center gap-10 mb-10">
         <div className="card bg-base-100 w-96 shadow-lg">
           <figure>
             <img
