@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <>
       <h1 className="text-center mt-16">Contact Florent</h1>
-      <p className="text-center italic">
+      <p className="text-center italic px-2">
         If you have any questions about the topics I’ve mentioned, or if you’d
         like to talk with me about any subject you’re interested in, feel free
         to contact me !
@@ -15,8 +15,8 @@ export default function ContactPage() {
           <img src={PhotoCVFlo} className="object-top" />
         </div>
       </div>
-      <div className="card place-self-center bg-base-200 shadow-xl border border-gray-600 max-w-2/3 min-w-2xl pt-12">
-        <h2 className="text-center m-3 text-emerald-900">Contact Form</h2>
+      <div className="card place-self-center bg-base-200 shadow-xl border border-gray-600 max-w-full min-w-5/6 pt-12">
+        <h2 className="text-center m-3 text-primary">Contact Form</h2>
         <ContactForm />
       </div>
       <div className="text-center mt-8 mb-10">
@@ -26,7 +26,7 @@ export default function ContactPage() {
         </p>
         <a
           href="mailto:contact@florentaudap.com"
-          className="link link-primary text-emerald-900 font-semibold"
+          className="link link-primary font-semibold"
         >
           contact@florentaudap.com
         </a>

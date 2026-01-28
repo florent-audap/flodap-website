@@ -4,6 +4,8 @@ import HomePage from "./pages/home";
 import BlogPage from "./pages/blog";
 import ContactPage from "./pages/contact";
 import AboutMePage from "./pages/aboutMe";
+import ProjectsPage from "./pages/projects";
+import NotFoundPage from "./pages/notFound";
 import { Footer } from "./components/footer";
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutMePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
