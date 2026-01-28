@@ -6,6 +6,7 @@ import RosLogo from "../assets/about/IT-logo/Ros.svg";
 import SolidworksLogo from "../assets/about/IT-logo/solidworks.svg";
 import ReactLogo from "../assets/about/IT-logo/React.svg";
 import WordpressLogo from "../assets/about/IT-logo/wordpress.svg";
+import CudaLogo from "../assets/about/IT-logo/cuda.svg";
 
 export default function AboutMePage() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -414,8 +415,31 @@ export default function AboutMePage() {
               </a>
               <p>
                 I have used WordPress to fully create a website for a student
-                association and to redesign the Wattsy site.
+                association and to redesign the{" "}
+                <a
+                  href="https://www.wattsy.solutions/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary"
+                >
+                  Wattsy
+                </a>{" "}
+                website.
               </p>
+            </div>
+          </div>
+          <div className="carousel-item min-w-65 max-w-1/3">
+            <div className="card bg-base-300 text-center p-4">
+              <h3 className="font-bold my-2 text-primary">Cuda</h3>
+              <a
+                href="https://developer.nvidia.com/cuda/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-1/2 self-center-safe p-4"
+              >
+                <img src={CudaLogo} alt="Cuda Logo" className="max-h-full" />
+              </a>
+              <p>Basic experience with GPU programming using CUDA.</p>
             </div>
           </div>
         </div>
