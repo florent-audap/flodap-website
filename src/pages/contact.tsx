@@ -6,11 +6,11 @@ export default function ContactPage() {
     <>
       <h1 className="text-center mt-16">Contact Florent</h1>
       <p className="text-center italic px-2">
-        If you have any questions about the topics I’ve mentioned, or if you’d
-        like to talk with me about any subject you’re interested in, feel free
+        If you have any questions about the topics I've mentioned, or if you'd
+        like to talk with me about any subject you're interested in, feel free
         to contact me !
       </p>
-      <div className="avatar flex place-self-center z-10 -mb-12 mt-10">
+      <div className="avatar flex justify-center z-10 -mb-12 mt-10">
         <div className="mask mask-squircle w-24">
           <img src={PhotoCVFlo} className="object-top" />
         </div>
