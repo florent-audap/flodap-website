@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="footer footer-horizontal footer-center text-white bg-primary rounded gap-8 p-5">
+    <footer className="footer footer-horizontal footer-center text-white bg-primary rounded-t gap-8 p-5">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
