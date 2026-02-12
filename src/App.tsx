@@ -7,6 +7,7 @@ import AboutMePage from "./pages/aboutMe";
 import ProjectsPage from "./pages/projects";
 import NotFoundPage from "./pages/notFound";
 import { Footer } from "./components/footer";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<AboutMePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <Analytics />
       </main>
       <Footer />
     </div>
