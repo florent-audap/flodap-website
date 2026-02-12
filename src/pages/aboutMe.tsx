@@ -7,6 +7,7 @@ import SolidworksLogo from "../assets/about/IT-logo/solidworks.svg";
 import ReactLogo from "../assets/about/IT-logo/React.svg";
 import WordpressLogo from "../assets/about/IT-logo/wordpress.svg";
 import CudaLogo from "../assets/about/IT-logo/cuda.svg";
+import ArduinoLogo from "../assets/about/IT-logo/arduino.svg"
 
 export default function AboutMePage() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -22,7 +23,7 @@ export default function AboutMePage() {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold mb-4">About Me</h1>
-        <p>You will know a lot of thing about my life until now</p>
+        <p>You will know a lot of things about my life until now</p>
       </div>
       {/* Timeline part */}
       <div className="text-center mb-12">
@@ -95,7 +96,7 @@ export default function AboutMePage() {
               href="https://wattsy.solutions"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline transition-colors"
+              className="text-primary underline transition-colors"
             >
               Wattsy
             </a>{" "}
@@ -122,12 +123,12 @@ export default function AboutMePage() {
           </div>
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2022-2024</time>
-            <div className="text-lg font-black">
+            <div className="text-lg font-black mb-1">
               <a
                 href="https://www.centralesupelec.fr/programmes/ingenieur-generaliste"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary hover:underline transition-colors"
+                className="hover:text-primary underline transition-colors"
               >
                 Engineering school at CentraleSupélec
               </a>
@@ -164,12 +165,12 @@ export default function AboutMePage() {
           </div>
           <div className="timeline-end md:mb-10">
             <time className="font-mono italic">2020-2022</time>
-            <div className="text-lg font-black">
+            <div className="text-lg font-black mb-1">
               <a
                 href="https://www.eiffel-bordeaux.org/formations/cpge-ptsi-physique-technologie-sciences-de-lingenieur/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary hover:underline transition-colors"
+                className="hover:text-primary underline transition-colors"
               >
                 Preparatory classes in engineering
               </a>
@@ -357,7 +358,7 @@ export default function AboutMePage() {
                   href="https://www.carecare.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary"
+                  className="text-primary underline"
                 >
                   CareCare
                 </a>{" "}
@@ -425,7 +426,7 @@ export default function AboutMePage() {
                   href="https://www.wattsy.solutions/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary"
+                  className="text-primary underline"
                 >
                   Wattsy
                 </a>{" "}
@@ -445,6 +446,20 @@ export default function AboutMePage() {
                 <img src={CudaLogo} alt="Cuda Logo" className="max-h-full" />
               </a>
               <p>Basic experience with GPU programming using CUDA.</p>
+            </div>
+          </div>
+          <div className="carousel-item min-w-65 max-w-1/3">
+            <div className="card bg-base-300 text-center p-4">
+              <h3 className="font-bold my-2 text-primary">Arduino</h3>
+              <a
+                href="https://docs.arduino.cc/programming/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-1/2 self-center-safe p-4"
+              >
+                <img src={ArduinoLogo} alt="Arduino Logo" className="max-h-full" />
+              </a>
+              <p>Experience with some simple assembly (with an Arduino Uno).</p>
             </div>
           </div>
         </div>
