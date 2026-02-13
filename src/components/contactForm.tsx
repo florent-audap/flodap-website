@@ -32,7 +32,7 @@ export function ContactForm() {
       className="space-y-4 p-10 flex flex-col items-center"
     >
       <input
-        className="input input-bordered w-1/2"
+        className="input input-bordered"
         placeholder="Name"
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -41,7 +41,7 @@ export function ContactForm() {
       <input
         required
         type="email"
-        className="input input-bordered w-1/2"
+        className="input input-bordered"
         placeholder="Email"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -49,7 +49,7 @@ export function ContactForm() {
 
       <textarea
         required
-        className="textarea textarea-bordered w-1/2"
+        className="textarea textarea-bordered"
         placeholder="Message"
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
