@@ -57,9 +57,9 @@ Les variables d’environnement sont gérées via :
 
 main → production
 
-develop → preview
+develop → développement & preview
 
-feature/\* → nouvelles fonctionnalités
+Développement sur develop, puis merge vers main pour la production.
 
 Les merges vers main se font via Pull Request.
 
