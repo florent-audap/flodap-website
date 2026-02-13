@@ -46,28 +46,23 @@ export default function ProjectsPage() {
         </p>
       </div>
       {/* List of the projects */}
-      {projects.map((project) => (
-        <div key={project.title} className="card bg-base-300 my-6">
+      {projects.map((project) => {
+        const cardContent = (
           <div className="flex space-x-4 p-5">
             <div className="mx-2 text-primary">{project.logo}</div>
             <div className="flex-1">
-              <div className="text-l text-primary">{project.title}</div>
+              <h2 className="text-lg text-primary -mb-0.5">{project.title}</h2>
               <div className="text-xs uppercase font-semibold opacity-60">
                 {project.state}
               </div>
-              <div className="text-sm mt-3 opacity-90">{project.description}</div>
+              <div className="text-sm mt-3 opacity-90">
+                {project.description}
+              </div>
             </div>
             {!project.confidential && (
               <div className="flex items-center min-w-fit">
                 <div className="flex flex-col items-center mx-3">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-square btn-ghost"
-                  >
-                    <FaRegArrowAltCircleRight size="30" />
-                  </a>
+                  <FaRegArrowAltCircleRight size="30" />
                   <div className="text-xs italic">See more</div>
                 </div>
               </div>
@@ -81,8 +76,27 @@ export default function ProjectsPage() {
               </div>
             )}
           </div>
-        </div>
-      ))}
+        );
+        return (
+          <div
+            key={project.title}
+            className="card border border-base-300 hover:border-base-content bg-base-300 my-6"
+          >
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                {cardContent}
+              </a>
+            ) : (
+              cardContent
+            )}
+          </div>
+        );
+      })}
+      <div className="text-center mt-12">
+        <h2 className="text-xl italic">
+          The other projects will appear here soon...
+        </h2>
+      </div>
     </div>
   );
 }
