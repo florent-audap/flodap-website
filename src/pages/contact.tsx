@@ -10,13 +10,13 @@ export default function ContactPage() {
         like to talk with me about any subject you're interested in, feel free
         to contact me !
       </p>
-        <div className="avatar flex justify-center z-10 -mb-12 mt-10">
-          <div className="mask mask-squircle w-24">
-            <img src={PhotoCVFlo} className="object-top" />
-          </div>
+      <div className="avatar flex justify-center z-10 -mb-12 mt-10">
+        <div className="mask mask-squircle w-24">
+          <img src={PhotoCVFlo} className="object-top" />
         </div>
+      </div>
       <div className="flex justify-center">
-        <div className="card bg-base-200 shadow-xl border border-gray-600 max-w-full min-w-5/6 pt-12">
+        <div className="card bg-base-200 shadow-xl border border-gray-600 w-5/6 pt-12 md:max-w-1/2">
           <h2 className="text-center m-3 text-primary">Contact Form</h2>
           <ContactForm />
         </div>
