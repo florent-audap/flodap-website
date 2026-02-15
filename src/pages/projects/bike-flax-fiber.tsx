@@ -3,23 +3,23 @@ import FlaxBike from "../../assets/bike-flax-fiber/BikeFLax.png";
 
 export default function BikeFlaxFiber() {
   return (
-    <div className="container mx-auto py-8 max-w-4xl">
-      <h1 className="text-4xl font-bold text-center mb-8">
+    <div className="container mx-auto max-w-4xl py-8">
+      <h1 className="mb-8 text-center text-4xl font-bold">
         Study of flax fiber reinforced composites for application in bicycle
         frames
       </h1>
-      <div className="text-center italic opacity-80 mb-10">
+      <div className="mb-10 text-center italic opacity-80">
         <span className="font-bold">Date:</span> 2021-2022
       </div>
 
-      <div className="space-y-8 text-justify text-md">
+      <div className="text-md space-y-8 text-justify">
         <section className="flex flex-col items-center">
           <img
             src={FlaxBike}
             className="w-2/3 rounded-lg shadow-lg"
             alt="Bicycle frame and flax fiber"
           />
-          <p className="text-sm italic mt-2 opacity-70">
+          <p className="mt-2 text-sm italic opacity-70">
             Bicycle frame and flax fiber
           </p>
         </section>
@@ -36,7 +36,7 @@ export default function BikeFlaxFiber() {
         </div>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4 text-primary">
+          <h2 className="text-primary mb-4 text-2xl font-bold">
             Context & Objectives
           </h2>
           <p>
@@ -59,7 +59,7 @@ export default function BikeFlaxFiber() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4 text-primary">
+          <h2 className="text-primary mb-4 text-2xl font-bold">
             Manufacturing & Testing
           </h2>
           <p>
@@ -74,7 +74,7 @@ export default function BikeFlaxFiber() {
             The manufacturing steps for the tubes included (fully detailed in
             the slides):
           </p>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+          <ul className="mt-2 ml-4 list-inside list-disc space-y-1">
             <li>Preparing the mold.</li>
             <li>Cutting fibers and mixing resin with hardener.</li>
             <li>Impregnating the fibers and rolling them around the mold.</li>
@@ -88,7 +88,7 @@ export default function BikeFlaxFiber() {
             To feed the numerical model, I performed mechanical tests to
             determine the Young's modulus (E):
           </p>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-2">
+          <ul className="mt-2 ml-4 list-inside list-disc space-y-2">
             <li>
               <strong>Tensile tests:</strong> Initial tests on a standard
               machine were inconclusive due to machine deformation. I then
@@ -108,7 +108,7 @@ export default function BikeFlaxFiber() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4 text-primary">
+          <h2 className="text-primary mb-4 text-2xl font-bold">
             Simulation & Results
           </h2>
           <p>
@@ -116,7 +116,7 @@ export default function BikeFlaxFiber() {
             <strong>SolidWorks</strong> numerical model.
           </p>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="mb-2 text-xl font-semibold">
               1. Single Tube Analysis
             </h3>
             <p>
@@ -127,7 +127,7 @@ export default function BikeFlaxFiber() {
             </p>
           </div>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="mb-2 text-xl font-semibold">
               2. Full Frame Analysis
             </h3>
             <p>
@@ -149,7 +149,7 @@ export default function BikeFlaxFiber() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4 text-primary">Conclusion</h2>
+          <h2 className="text-primary mb-4 text-2xl font-bold">Conclusion</h2>
           <p>
             The study confirms that{" "}
             <strong>
@@ -161,8 +161,12 @@ export default function BikeFlaxFiber() {
         </section>
         <section>
           <p className="text-center italic">
-            If you have any questions or would like more details, don't hesitate to contact me{" "}
-            <Link to="/contact" className="link">
+            If you have any questions or would like more details, don't hesitate
+            to contact me{" "}
+            <Link
+              to="/contact"
+              className="link"
+            >
               here
             </Link>
             .

@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       <div className="my-10">
-        <h1 className="text-center mt-10">Welcome to my personal website !</h1>
+        <h1 className="mt-10 text-center">Welcome to my personal website !</h1>
         <p className="text-center">
           Here you will find topics I love, information about myself, and
           presentation of some projects I’ve worked on, as well as ideas and
@@ -17,7 +17,10 @@ export default function HomePage() {
       </div>
       <div className="hero bg-base-200 min-h-50">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={VersaillesFlo} className="max-w-80 rounded-lg shadow-xl" />
+          <img
+            src={VersaillesFlo}
+            className="max-w-80 rounded-lg shadow-xl"
+          />
           <div>
             <h1 className="text-5xl font-bold">Who am I ?</h1>
             <p className="py-6">
@@ -25,22 +28,25 @@ export default function HomePage() {
               graduated from CentraleSupelec. I love engineering and I want to
               have a positive impact as an engineer of the 21st century.
             </p>
-            <Link to="/about" className="btn btn-primary">
+            <Link
+              to="/about"
+              className="btn btn-primary"
+            >
               Read more
             </Link>
           </div>
         </div>
       </div>
-      <h2 className="text-center my-15 text-primary">
+      <h2 className="text-primary my-15 text-center">
         What can you find in this website ?
       </h2>
-      <div className="flex flex-wrap justify-center gap-10 mb-10">
+      <div className="mb-10 flex flex-wrap justify-center gap-10">
         <div className="card bg-base-100 w-96 shadow-lg">
           <figure>
             <img
               src={SerrageMain}
               alt="My Projects Image"
-              className="w-full h-48 object-cover object-[center_45%]"
+              className="h-48 w-full object-cover object-[center_45%]"
             />
           </figure>
           <div className="card-body">
@@ -50,7 +56,10 @@ export default function HomePage() {
               a science concept or everything I want to share and talk about
             </p>
             <div className="card-actions justify-end">
-              <Link to="/blog" className="btn btn-primary">
+              <Link
+                to="/blog"
+                className="btn btn-primary"
+              >
                 Go to the page
               </Link>
             </div>
@@ -61,7 +70,7 @@ export default function HomePage() {
             <img
               src={ProjetTIPE}
               alt="My Projects Image"
-              className="w-full h-48 object-cover object-[center_40%]"
+              className="h-48 w-full object-cover object-[center_40%]"
             />
           </figure>
           <div className="card-body">
@@ -71,7 +80,10 @@ export default function HomePage() {
               created and the experiences behind them.
             </p>
             <div className="card-actions justify-end">
-              <Link to="/projects" className="btn btn-primary">
+              <Link
+                to="/projects"
+                className="btn btn-primary"
+              >
                 Go to the page
               </Link>
             </div>
@@ -82,7 +94,7 @@ export default function HomePage() {
             <img
               src={VacancesMontagne}
               alt="My Projects Image"
-              className="w-full h-48 object-cover object-[center_40%]"
+              className="h-48 w-full object-cover object-[center_40%]"
             />
           </figure>
           <div className="card-body">
@@ -92,7 +104,10 @@ export default function HomePage() {
               my professional journey.
             </p>
             <div className="card-actions justify-end">
-              <Link to="/about" className="btn btn-primary">
+              <Link
+                to="/about"
+                className="btn btn-primary"
+              >
                 Go to the page
               </Link>
             </div>
