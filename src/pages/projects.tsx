@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import { FaLock, FaRegArrowAltCircleRight } from "react-icons/fa";
+import { GrBike } from "react-icons/gr";
 import { PiMonitorBold, PiPillFill } from "react-icons/pi";
 
 export default function ProjectsPage() {
@@ -32,6 +34,16 @@ export default function ProjectsPage() {
       description:
         "Carried out for the Gustave Roussy Hospital, this project aimed to optimize the production flow of cytotoxic drugs to reduce patient waiting times. We developed a graphical user interface (GUI) to make an existing simulation model accessible to staff and created an Excel tool to analyze production KPIs, facilitating continuous process improvement.",
       confidential: true,
+    },
+    {
+      title:
+        "Study of flax fiber reinforced composites for application in bicycle frames",
+      state: "Finished",
+      logo: <GrBike size="30" />,
+      link: "/projects/bike-flax-fiber",
+      description:
+        "This project investigates the viability of flax fiber composites as a sustainable alternative for bicycle frames. Through experimental characterization of manufactured samples and numerical simulations, I validated that this eco-friendly material can withstand the necessary mechanical loads.",
+      confidential: false,
     },
   ];
 
@@ -83,9 +95,17 @@ export default function ProjectsPage() {
             className="card border border-base-300 hover:border-base-content bg-base-300 my-6"
           >
             {project.link ? (
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                {cardContent}
-              </a>
+              project.link.includes("https") ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cardContent}
+                </a>
+              ) : (
+                <Link to={project.link}>{cardContent}</Link>
+              )
             ) : (
               cardContent
             )}
