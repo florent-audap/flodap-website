@@ -3,7 +3,7 @@
   <url>
     <loc>https://www.florentaudap.com/</loc>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://www.florentaudap.com/about</loc>
@@ -12,6 +12,11 @@
   </url>
   <url>
     <loc>https://www.florentaudap.com/projects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.florentaudap.com/projects/bike-flax-fiber</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

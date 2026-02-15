@@ -44,10 +44,14 @@ export default function Navbar() {
     }
   };
   return (
-    <div className="navbar bg-base-200 shadow-sm dark:shadow-amber-50 sticky top-0 z-50">
+    <div className="navbar bg-base-200 sticky top-0 z-50 shadow-sm dark:shadow-amber-50">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -82,14 +86,20 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost hidden md:flex">
+        <Link
+          to="/"
+          className="btn btn-ghost hidden md:flex"
+        >
           Florent Audap | Personal Website
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal space-x-1 px-1">
           <li>
-            <Link to="/" className="w-full">
+            <Link
+              to="/"
+              className="w-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -114,7 +124,11 @@ export default function Navbar() {
       <div className="navbar-end">
         {/* Thème controller */}
         <label className="toggle text-base-content-200 mr-3">
-          <input type="checkbox" checked={checked} onChange={handleToggle} />
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={handleToggle}
+          />
 
           <svg
             aria-label="sun"
@@ -128,7 +142,11 @@ export default function Navbar() {
               fill="none"
               stroke="currentColor"
             >
-              <circle cx="12" cy="12" r="4"></circle>
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              ></circle>
               <path d="M12 2v2"></path>
               <path d="M12 20v2"></path>
               <path d="m4.93 4.93 1.41 1.41"></path>
@@ -156,7 +174,10 @@ export default function Navbar() {
             </g>
           </svg>
         </label>
-        <Link to="/contact" className="btn btn-primary">
+        <Link
+          to="/contact"
+          className="btn btn-primary"
+        >
           Contact
         </Link>
       </div>

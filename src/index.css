@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
   themes:
@@ -13,17 +14,15 @@
   --color-secondary: teal;
 }
 
-
-
 @layer base {
   h1 {
-    @apply text-4xl font-bold mb-6;
+    @apply mb-6 text-4xl font-bold;
   }
   h2 {
-    @apply text-3xl font-bold mb-4;
+    @apply mb-4 text-3xl font-bold;
   }
   h3 {
-    @apply text-2xl font-semibold mb-3;
+    @apply mb-3 text-2xl font-semibold;
   }
   p {
     @apply mb-4 leading-relaxed;

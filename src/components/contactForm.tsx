@@ -29,7 +29,7 @@ export function ContactForm() {
         submit(form);
         isPaul(form.email);
       }}
-      className="space-y-4 p-10 flex flex-col items-center"
+      className="flex flex-col items-center space-y-4 p-10"
     >
       <input
         className="input input-bordered"
@@ -64,7 +64,10 @@ export function ContactForm() {
         onChange={(e) => setForm({ ...form, company: e.target.value })}
       />
 
-      <button className="btn btn-primary" disabled={loading}>
+      <button
+        className="btn btn-primary"
+        disabled={loading}
+      >
         {loading ? "Sending..." : "Send Message"}
       </button>
 

@@ -109,30 +109,33 @@ export function SkillsIT() {
   return (
     <div className="relative">
       <button
-        className="absolute left-0 top-1/2 z-10 -translate-y-1/2 btn btn-circle btn-sm btn-neutral opacity-75 hover:opacity-100 hidden md:flex"
+        className="btn btn-circle btn-sm btn-neutral absolute top-1/2 left-0 z-10 hidden -translate-y-1/2 opacity-75 hover:opacity-100 md:flex"
         onClick={() => scroll(-300)}
       >
         ❮
       </button>
       <button
-        className="absolute right-0 top-1/2 z-10 -translate-y-1/2 btn btn-circle btn-sm btn-neutral opacity-75 hover:opacity-100 hidden md:flex"
+        className="btn btn-circle btn-sm btn-neutral absolute top-1/2 right-0 z-10 hidden -translate-y-1/2 opacity-75 hover:opacity-100 md:flex"
         onClick={() => scroll(300)}
       >
         ❯
       </button>
       <div
         ref={carouselRef}
-        className="carousel carousel-center rounded-box max-w-full max-h-90 space-x-4 p-4"
+        className="carousel carousel-center rounded-box max-h-90 max-w-full space-x-4 p-4"
       >
         {skills.map((skill) => (
-          <div key={skill.title} className="carousel-item min-w-65 max-w-1/3">
-            <div className="card bg-base-300 rounded text-center p-4">
-              <h3 className="font-bold my-2 text-primary">{skill.title}</h3>
+          <div
+            key={skill.title}
+            className="carousel-item max-w-1/3 min-w-65"
+          >
+            <div className="card bg-base-300 rounded p-4 text-center">
+              <h3 className="text-primary my-2 font-bold">{skill.title}</h3>
               <a
                 href={skill.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-1/2 flex justify-center items-center"
+                className="flex h-1/2 items-center justify-center"
               >
                 <img
                   src={skill.logo}
