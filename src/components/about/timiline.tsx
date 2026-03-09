@@ -244,7 +244,7 @@ export function Timeline() {
           to the ocean and the mountains.
           <img
             src={MapPointBirth}
-            className="max-w-1/2 md:place-self-end"
+            className="block max-w-[70%] md:ms-auto"
           />
         </div>
       </li>
